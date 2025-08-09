@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Document</title>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    background: url('Back1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+  }
+
+  .login-form {
+    background: #fff;
+    width: 500px;
+    margin: 65px auto;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    border-radius: 4px;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+  }
+  .login-form h1 {
+    padding: 35px 35px 0 35px;
+    font-weight: 300;
+  }
+  .login-form .content {
+    padding: 35px;
+    text-align: center;
+  }
+  .login-form .input-field {
+    padding: 12px 5px;
+  }
+  .login-form .input-field input {
+    font-size: 16px;
+    display: block;
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    padding: 10px 1px;
+    border: 0;
+    border-bottom: 1px solid #747474;
+    outline: none;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+  }
+  .login-form .input-field input::-webkit-input-placeholder {
+    text-transform: uppercase;
+  }
+  .login-form .input-field input::-moz-placeholder {
+    text-transform: uppercase;
+  }
+  .login-form .input-field input:-ms-input-placeholder {
+    text-transform: uppercase;
+  }
+  .login-form .input-field input::-ms-input-placeholder {
+    text-transform: uppercase;
+  }
+  .login-form .input-field input::placeholder {
+    text-transform: uppercase;
+  }
+  .login-form .input-field input:focus {
+    border-color: #222;
+  }
+  .login-form a.link {
+    text-decoration: none;
+    color: #747474;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  .login-form .action {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+  }
+  .login-form .action button {
+    width: 100%;
+    border: none;
+    padding: 18px;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: #e8e9ec;
+    color: #777;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 0;
+    letter-spacing: 0.2px;
+    outline: 0;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  .login-form .action button:hover {
+    background: #d8d8d8;
+  }
+  .login-form .action button:nth-child(2) {
+    background: #2d3b55;
+    color: #fff;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 4px;
+  }
+  .login-form .action button:nth-child(2):hover {
+    background: #3c4d6d;
+  }
+
+  nav {
+    height: 80px;
+    background:#df3e3e;
+    color: #ff5050;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2);
+  }
+
+  .logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0 2rem;
+   
+  }
+
+  nav a {
+    text-decoration: none;
+    color: white;
+    padding: 0 1.5rem;
+  }
+
+  nav a:hover {
+    background:#df3e3e;
+    color: #ff5050;
+  }
+
+  .hero {
+    height: 100vh;
+  background: rgba(36, 3, 3, 0.5); /* Red with 50% transparency */
+  color: #ff5050;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50;
+  left: 0;
+  width: 100%
+  }
+
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 3rem calc((100vw - 1300px) / 2);
+  }
+
+  .column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #ff5050;
+    padding: 0rem 2rem;
+  }
+
+  .column-left h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+  }
+
+  .column-left p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: #ff5050;
+    background: white;
+    cursor: pointer;
+    border-radius: 0px;
+  }
+
+  button:hover {
+    background: #fff;
+    color: #000;
+  }
+
+  .column-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+  }
+  .button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2d3b55;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+.button-link:hover {
+    background-color: #3c4d6d;
+}
+
+  .hero-image {
+    width: 100%;
+    height: 70%;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .hero-container {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">36 FOODCART</div>
+  <div class="nav-items">
+    <a href="Main.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="/contact">Contact</a>
+  </div>
+</nav>
+<section class="hero">
+  
+  <div class="login-form">
+    <form>
+      <h1>Register</h1>
+      <div class="content">
+        <div class="input-field">
+          <input id="floatingEmail" type="email" placeholder="Email" autocomplete="nope">
+        </div>
+        <div class="input-field">
+          <input id="floatingUsername" type="username" placeholder="Username" autocomplete="nope">
+        </div>
+        <div class="input-field">
+          <input id="floatingPassword" type="password" placeholder="Password" autocomplete="new-password">
+        </div>
+        
+      </div>
+      
+      </div>
+    </form>
+    <div class="action" style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+      <button onclick="checkLogin() " id="btnAdd">Sign up</button>
+      <a href="Login.html" class="register-button" style="padding: 8px 16px; background-color: #2d3b55; color: white; text-decoration: none; border-radius: 4px; transition: background-color 0.3s;">Cancel</a>
+    </div>
+      <div class="action">
+       
+  </div>
+</section>
+<script src="Register.js" ></script>
+</body>
+
+</html>

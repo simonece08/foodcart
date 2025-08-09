@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Document</title>
+<style>
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    background: url('Back.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+  }
+  nav {
+    height: 80px;
+    background:#df3e3e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2);
+  }
+
+  .logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0 2rem;
+   
+  }
+
+  nav a {
+    text-decoration: none;
+    color: white;
+    padding: 0 1.5rem;
+  }
+
+  nav a:hover {
+    color: #fff;
+  }
+
+  .hero {
+    background: rgba(36, 3, 3, 0.5); /* Red with 50% transparency */
+}
+
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 3rem calc((100vw - 1300px) / 2);
+  }
+
+  .column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    padding: 0rem 2rem;
+  }
+
+  .column-left h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+  }
+
+  .column-left p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: #ff5050;
+    background: white;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+
+  button:hover {
+    background: #fff;
+    color: #000;
+  }
+
+  .column-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 70%;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .hero-container {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo" style="font-weight: 900;" >36 FOODCART</div>
+  <div class="nav-items">
+    <a href="Main.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Contact.html">Contact</a>
+  </div>
+</nav>
+<section class="hero">
+  <div class="hero-container">
+    <div class="column-left">
+      <h1 style="font-weight: 900; font-size: 80px;">FLAVORS THAT TRAVEL WITH YOU</h1>
+      <p>Step up to our cart and savor the taste of homemade goodness, crafted with love and served with a side of smiles!</p>
+      <a href="Login.html"> <button >SHOP</button> </a>
+    </div>
+    <div class="column-right">
+      <img src="./LOGO2.png" alt="Illustration" class="hero-image" />
+    </div>
+  </div>
+</section>
+</body>
+</html>

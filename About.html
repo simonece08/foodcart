@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Document</title>
+<style>
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    background: url('Back.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+  }
+  nav {
+    height: 80px;
+    background:#df3e3e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2);
+  }
+
+  .logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0 2rem;
+   
+  }
+
+  nav a {
+    text-decoration: none;
+    color: white;
+    padding: 0 1.5rem;
+  }
+
+  nav a:hover {
+    color: #fff;
+  }
+
+  .hero {
+    background: rgba(36, 3, 3, 0.5); /* Red with 50% transparency */
+}
+
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 3rem calc((100vw - 1300px) / 2);
+  }
+
+  .column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    padding: 0rem 2rem;
+  }
+
+  .column-left h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+  }
+
+  .column-left p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: #ff5050;
+    background: white;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+
+  button:hover {
+    background: #fff;
+    color: #000;
+  }
+
+  .column-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 70%;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .hero-container {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo" style="font-weight: 900;" >36 FOODCART</div>
+  <div class="nav-items">
+    <a href="Main.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Contact.html">Contact</a>
+  </div>
+</nav>
+<section class="hero">
+  <div class="hero-container">
+    <div class="column-left">
+      <h1 style="font-weight: 900; font-size: 80px;">FLAVORS THAT TRAVEL WITH YOU</h1>
+      
+      
+      
+      <a href="Login.html"> <button >SHOP</button> </a>
+    </div>
+    <div>
+      <h1 style="font-weight: 900; font-size: 30px;">About 36 FOODCART</h1>
+      <p style="font-family: Arial, sans-serif; margin-top: 20px; font-size: 20px;">
+          Welcome to 36 FOODCART, your one-stop destination for all your culinary desires!
+          <br><br>
+          At 36 FOODCART, we believe that food is not just a meal; it's an experience. We are passionate about bringing you the finest ingredients, the most delectable dishes, and the most delightful flavors from around the world, right to your doorstep.
+          <br><br>
+          Our journey began with a simple idea: to provide food lovers with a platform to discover, savor, and share their love for food. What started as a humble endeavor has now grown into a thriving community of food enthusiasts, chefs, and artisans, all united by their love for great food.
+          <br><br>
+          We take pride in curating a wide range of products, from gourmet treats to everyday essentials, ensuring that there's something for everyone at 36 FOODCART. Our commitment to quality means that every product you find here has been carefully selected and tested by our team of experts, so you can trust that you're getting only the best.
+          <br><br>
+          But 36 FOODCART is more than just a marketplace; it's a place to connect, explore, and indulge. Join us on a culinary adventure as we bring the world's flavors to your table, one delicious bite at a time.
+          <br><br>
+          Thank you for choosing 36 FOODCART. We look forward to serving you!
+      </p>
+  </div>
+    
+  </div>
+</section>
+</body>
+</html>
